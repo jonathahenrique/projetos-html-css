@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.container {
+    display: grid;
+    border: 1px solid black;
+    width: 100%;
+    grid-template-columns: 40% 30% 20%;
+    grid-template-rows: 100px 250px 200px;
+    grid-template-areas: 
+    "b1 b1 b1"
+    "b2 b2 b3"
+    "b4 b5 b3";
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+.box {
+    border: 1px solid blue;
+    background-color: tomato;
+    
+}
+
+#box-1 {
+    grid-area: b1
+}
+
+#box-2 {
+    grid-area: b2
+}
+
+#box-3 {
+    grid-area: b3
+}
+
+#box-4 {
+    grid-area: b4
+}
+
+#box-5 {
+    grid-area: b5
+}
