@@ -14,37 +14,41 @@ main {
     height: 100vh;
     background-color: #201b2c;
     display: flex;
+    grid-template-areas: 
+    "aside section";
     justify-content: center;
     align-items: center;
 }
 
-div.left-login {
+.left-login {
     width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
-div.left-login > h1 {
+.left-login > h1 {
     font-size: 2.5vw;
     color: #77ffc0;
 }
 
-img.left-login-image {
+.left-login-image {
     width: 30vw;
 }
 
-div.right-login {
+.right-login {
     width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
+   
 }
 
-div.card-login {
+.card-login {
     width: 55%;
     display: flex;
     justify-content: center;
@@ -56,20 +60,20 @@ div.card-login {
     box-shadow: 0px 10px 40px #00000056;
 }
 
-div.card-login > h2 {
+.card-login > h2 {
     color: #00ff88;
     font-weight: 800;
     margin: 0%;
 }
 
-div.textfield {
+.textfield {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
 }
 
-div.textfield > input {
+.textfield > input {
     width: 100%;
     border: none;
     border-radius: 10px;
@@ -82,16 +86,16 @@ div.textfield > input {
     box-sizing: border-box;
 }
 
-div.textfield > label {
+.textfield > label {
     color: #f0ffffde;
     margin-bottom: 10px;
 }
 
-div.textfield > input::placeholder {
+.textfield > input::placeholder {
     color: #f0ffff94;
 }
 
-button.btn-login {
+.btn-login {
     color: #2b134b;
     background-color: #00ff68;
     width: 100%;
@@ -107,7 +111,7 @@ button.btn-login {
 }
 
 @media only screen and (max-width: 1000px){
-    div.card-login {
+    .card-login {
         width: 80%;
     }
 }
@@ -117,25 +121,25 @@ button.btn-login {
         flex-direction: column;
     }
     
-    div.right-login {
+    .right-login {
         width: 100%;
         height: auto;
     }
 
-    div.left-login {
+    .left-login {
         width: 100%;
         height: auto;
     }
 
-    div.left-login > h1 {
+    .left-login > h1 {
         display: none;
     }
 
-    img.left-login-image {
+    .left-login-image {
         width: 48vw;
     }
 
-    div.card-login {
+    .card-login {
         width: 90%;
     }
 }
