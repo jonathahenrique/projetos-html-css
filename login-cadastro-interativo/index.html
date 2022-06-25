@@ -8,14 +8,14 @@
     <script src="https://kit.fontawesome.com/53e94713c8.js" crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
-<body>
+<body class="entrar-js">
     <div class="container">
         <div class="content first-content">
             <div class="first-column">
                 <h2 class="title title-primary">Bem vindo de volta!</h2>
                 <p class="description description-primary">Conecte-se novamente</p>
                 <p class="description description-primary">fazendo o login inserindo suas informações</p>
-                <button class="btn btn-primary">Entrar</button>
+                <button id="entrar" class="btn btn-primary">Entrar</button>
             </div>
             <div class="second-column">
                 <h2 class="title title-second">Faça o seu cadastro</h2>
@@ -32,13 +32,13 @@
                     <i class="fa-solid fa-user icon-modify"></i>
                     <input type="text" id="nome" placeholder="Nome">
                 </label>
-                <label for="iemail" class="label-input">
+                <label for="email-cadastro" class="label-input">
                     <i class="fa-solid fa-envelope icon-modify"></i>
-                    <input type="email" id="iemail" placeholder="E-mail">
+                    <input type="email" id="email-cadastro" placeholder="E-mail">
                 </label>
-                <label for="isenha" class="label-input">
+                <label for="senha-cadastro" class="label-input">
                     <i class="fa-solid fa-lock icon-modify"></i>
-                    <input type="password" id="isenha" placeholder="Senha">
+                    <input type="password" id="i-senha-cadastro" placeholder="Senha">
                 </label>
                 <button class="btn btn-second">Criar Conta</button>
             </form>
@@ -50,7 +50,7 @@
                 <h2 class="title title-primary">Olá, Amigo! </h2>
                 <p class="description description-primary">Faça o seu cadastro agora mesmo</p>
                 <p class="description description-primary">e inicie essa jornada conosco</p>
-                <button class="btn btn-primary">Criar Conta</button>
+                <button id="cadastrar" class="btn btn-primary">Criar Conta</button>
             </div>
             <div class="second-column">
                 <h2 class="title title-second">Faça Login agora mesmo</h2>
@@ -63,18 +63,19 @@
                 </div> <!-- Fim social media -->
                 <p class="description description-second">ou utilize o seu e-mail</p>
                 <form action="/" class="form">
-                    <label for="iemail" class="label-input">
+                    <label for="email-login" class="label-input">
                         <i class="fa-solid fa-envelope icon-modify"></i>
-                        <input type="email" id="iemail" placeholder="E-mail">
+                        <input type="email" id="email-login" placeholder="E-mail">
                     </label>
-                    <label for="isenha" class="label-input">
+                    <label for="senha-login" class="label-input">
                         <i class="fa-solid fa-lock icon-modify"></i>
-                        <input type="password" id="isenha" placeholder="Senha">
+                        <input type="password" id="senha-login" placeholder="Senha">
                     </label>
                     <a href="#" class="forgot">Esqueci minha senha</a>
                     <button class="btn btn-second">Entrar</button>
                 </form>
             </div> <!-- Fim second column -->
         </div><!-- Fim second content-->
+        <script src="js/app.js"></script>
 </body>
 </html>
