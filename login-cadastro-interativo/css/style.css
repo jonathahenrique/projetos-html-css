@@ -214,21 +214,58 @@ body {
     z-index: -1;
 }
 
-.entrar-js > .container > .second-content > .first-column, .entrar-js > .container > .second-content > .second-column {
-    z-index: 10;
+.entrar-js > .container > .second-content > .first-column {
+    z-index: 11;
+}
+.entrar-js > .container > .second-content > .second-column {
+    z-index: 9;
 }
 
 .entrar-js > .container > .content::before {
     left: 60%;
+    animation: slide-entrar 2s;
+    z-index: 10;
 }
-
-
-
 
 .cadastrar-js > .container > .second-content > .first-column, .cadastrar-js > .container > .second-content > .second-column {
     z-index: -1;
 }
 
-.cadastrar-js > .container > .first-content > .first-column, .cadastrar-js > .container > .first-content > .second-column {
+.cadastrar-js > .container > .first-content > .first-column {
+    z-index: 11;
+}
+.cadastrar-js > .container > .first-content > .second-column {
+    z-index: 9;
+}
+
+.cadastrar-js .content::before {
+    animation: slide-cadastrar 2s;
     z-index: 10;
+}
+
+/* ANIMAÇÃO CSS */
+
+@keyframes slide-entrar {
+    
+    from {
+        left: 0;
+        width: 40%;
+    }
+    
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slide-cadastrar {
+    
+    from {
+        left: 60%;
+        width: 40%;
+    }
+    to {
+        left: 0;
+        width: 40%;
+    }
 }
