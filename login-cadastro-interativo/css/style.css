@@ -210,7 +210,7 @@ body {
     margin: 10px;
 }
 
-.entrar-js > .container > .first-content > .first-column, .entrar-js > .container > .first-content > .second-column {
+.entrar-js > .container > .first-content > .first-column {
     z-index: -1;
 }
 
@@ -223,7 +223,7 @@ body {
 
 .entrar-js > .container > .content::before {
     left: 60%;
-    animation: slide-entrar 2s;
+    animation: slide-entrar 3s;
     z-index: 10;
 }
 
@@ -243,6 +243,28 @@ body {
     z-index: 10;
 }
 
+/* DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT:BEFORE */
+.entrar-js > .container > .first-content > .second-column {
+    z-index: -1;
+    position: relative;
+    animation: deslocamento 1.5s;
+}
+
+/* ANIMAÇÃO CSS PARA O CONTEÚDO */
+@keyframes deslocamento {
+    from {
+        left: 0;
+        z-index: 12;
+        opacity: 1;
+    }
+    
+    to {
+        left: -110px;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
 /* ANIMAÇÃO CSS */
 
 @keyframes slide-entrar {
@@ -251,7 +273,11 @@ body {
         left: 0;
         width: 40%;
     }
-    
+    25% {
+        left: 20%;
+        width: 50%;
+    }
+   
     to {
         left: 60%;
         width: 40%;
